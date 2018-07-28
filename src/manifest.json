@@ -2,6 +2,7 @@
 	"name": "Refined Discord",
 	"version": "1.0",
 	"description": "Adds useful features to the Discord interface",
+	"author": "Joe McGrath",
 	"manifest_version": 2,
 	"icons": {
 		"16": "icon/icon16.png",
