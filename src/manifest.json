@@ -14,8 +14,8 @@
 		{
 			"run_at": "document_start",
             "matches": ["https://discordapp.com/*"],
-            "css": ["styles/textareaCount.css"],
-			"js": ["features/textareaCount.js"]
+            "css": ["styles/characterCount.css"],
+			"js": ["features/characterCount.js"]
 		}
 	]
 }

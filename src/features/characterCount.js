@@ -1,6 +1,6 @@
 const characterLimit = 2000
-const countContainerClass = 'refined-discord_textarea-count'
-const countValueClass = 'refined-discord_textarea-count-value'
+const countContainerClass = 'refined-discord_character-count'
+const countValueClass = 'refined-discord_character-count-value'
 
 const selectCountElement = countContainer => countContainer.children[0]
 
