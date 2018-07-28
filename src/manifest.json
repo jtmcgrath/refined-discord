@@ -14,7 +14,7 @@
 		{
 			"run_at": "document_start",
             "matches": ["https://discordapp.com/*"],
-            "css": ["styles/characterCount.css"],
+            "css": ["features/characterCount.css"],
 			"js": ["features/characterCount.js"]
 		}
 	]
