@@ -1,0 +1,52 @@
+.refined-discord_mobile-toggle {
+	align-items: center;
+	color: #afb0b2;
+	cursor: pointer;
+	display: none;
+	font-size: 12px;
+	font-style: italic;
+	height: 44px;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 70px;
+	z-index: 999;
+}
+
+@media (max-width: 900px) {
+	.refined-discord_mobile-toggle {
+		display: flex;
+	}
+
+	.refined-discord_mobile-toggle.show-channels {
+		color: #fff;
+	}
+
+	#app-mount .guilds-wrapper {
+		padding-top: 44px;
+		z-index: 2;
+	}
+
+	.theme-light .guilds-wrapper {
+		background: lightgrey;
+	}
+
+	.theme-dark .guilds-wrapper {
+		background: #202225;
+	}
+
+	#app-mount .guilds-wrapper + div {
+		margin-right: -240px;
+		transform: translateX(-240px);
+		transition: all 0.2s ease;
+	}
+
+	.refined-discord_mobile-toggle.show-channels
+		+ #app-mount
+		.guilds-wrapper
+		+ div {
+		transform: translateX(0);
+	}
+}

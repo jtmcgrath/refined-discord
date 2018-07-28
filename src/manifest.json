@@ -9,13 +9,19 @@
 		"48": "icon/icon48.png",
 		"64": "icon/icon64.png",
 		"128": "icon/icon128.png"
-    },
+	},
 	"content_scripts": [
 		{
 			"run_at": "document_start",
-            "matches": ["https://discordapp.com/*"],
-            "css": ["features/characterCount.css"],
-			"js": ["features/characterCount.js"]
+			"matches": ["https://discordapp.com/*"],
+			"css": [
+				"features/characterCount.css",
+				"features/responsiveChannels.css"
+			],
+			"js": [
+				"features/characterCount.js",
+				"features/responsiveChannels.js"
+			]
 		}
 	]
 }
