@@ -1,3 +1,4 @@
+const characterLimit = 2000
 const countContainerClass = 'refined-discord_textarea-count'
 const countValueClass = 'refined-discord_textarea-count-value'
 
@@ -8,7 +9,7 @@ const createCountElement = target => {
 	countContainer.className = countContainerClass
 	countContainer.innerHTML = `<span class="${countValueClass}">${
 		target.value.length
-	}</span>/2000`
+	}</span>/${characterLimit}`
 	target.insertAdjacentElement('afterend', countContainer)
 	return selectCountElement(countContainer)
 }
@@ -20,6 +21,12 @@ const getCountElement = target =>
 
 window.addEventListener('keyup', ({ target }) => {
 	if (target.type === 'textarea') {
-        getCountElement(target).innerHTML = target.value.length
+		getCountElement(target).innerHTML = target.value.length
+
+		if (target.value.length > characterLimit) {
+			target.classList.add('error')
+		} else {
+			target.classList.remove('error')
+		}
 	}
 })

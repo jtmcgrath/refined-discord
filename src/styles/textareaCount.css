@@ -1,0 +1,12 @@
+.refined-discord_textarea-count {
+	bottom: 0;
+	font-size: 16px;
+	line-height: 40px;
+	opacity: 0.2;
+	position: absolute;
+	right: 44px;
+}
+
+textarea.error {
+	color: rgb(240,71,71) !important;
+}
