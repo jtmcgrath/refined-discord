@@ -21,6 +21,7 @@
 			],
 			"js": [
 				"features/characterCount.js",
+				"features/hideMembers.js",
 				"features/responsiveChannels.js"
 			]
 		}

@@ -40,6 +40,10 @@ On smaller screens, the web interface becomes unusable. Refined Discord hides th
 
 <img src="./images/toggle-channels.gif" width="515px" />
 
+#### Hide Members
+
+The members section also takes up a lot of space and breaks the layout on smaller screens. Refined Discord automatically hides the members panel on small screens, both on initial load and when you resize your screen!
+
 ## Suggestions and Contributions
 
 Suggestions and pull requests are highly encouraged!
