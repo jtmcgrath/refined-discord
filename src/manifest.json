@@ -14,7 +14,7 @@
 	"content_scripts": [
 		{
 			"run_at": "document_start",
-			"matches": ["https://discordapp.com/*"],
+			"matches": ["https://discordapp.com/channels/*"],
 			"css": [
 				"features/characterCount.css",
 				"features/responsiveChannels.css"
