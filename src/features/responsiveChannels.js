@@ -9,4 +9,10 @@ window.addEventListener('load', () => {
 		toggleElement.classList.toggle('show-channels')
 	})
 	document.body.insertAdjacentElement('afterbegin', toggleElement)
+
+	setTimeout(() => {
+		if (document.querySelector('[class*="members"]')) {
+			document.querySelector('svg[name="People"]').parentElement.click()
+		}
+	}, 1000)
 })
