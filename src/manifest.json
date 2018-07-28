@@ -9,5 +9,12 @@
 		"48": "icon/icon48.png",
 		"64": "icon/icon64.png",
 		"128": "icon/icon128.png"
-	}
+    },
+	"content_scripts": [
+		{
+			"run_at": "document_start",
+			"matches": ["https://discordapp.com/*"],
+			"js": ["features/textareaCount.js"]
+		}
+	]
 }
